@@ -16,5 +16,15 @@ class ProductsController < ApplicationController
     @cart = @@cart
   end
 
+  def cart
+    @cart = @@cart
+  end
+
+  def remove
+    @product = Product.find(params[:id].to_i)
+    @@cart.delete(@product)
+    @cart = @@cart
+  end
+
 
 end
