@@ -3,7 +3,7 @@
 <ul>
   <% @catalogue.each do |product| %>
   <li>
-    <%= product.name %>
+    <%= link_to product.name, product_path(id: product.id)%>
   </li>
 <% end %>
 </ul>

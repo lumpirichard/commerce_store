@@ -1,0 +1,10 @@
+<h1>Successfully added <%= @product.name %></h1>
+
+<h2>Your cart</h2>
+<ul>
+  <% @cart.each do |product| %>
+  <li>
+    <%= product.name%>
+  </li>
+<% end %>
+</ul>
