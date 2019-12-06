@@ -1,5 +1,10 @@
 <h1>Our whole catalogue</h1>
 
+<form action="/catalogue" method = "get">
+  <input type="text" name="Calorie Count" placeholder="Max">
+  <input type="submit">
+</form>
+
 <ul>
   <% @catalogue.each do |product| %>
   <li>
