@@ -1,24 +1,18 @@
 # README
+Environment:
+* Ruby version: ruby 2.6.3
+* Rails version: Rails 6.0.1
+* MySql version: 8.0.18
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Configuration:<br />
+insert your MySql username and password in the following file:<br />
+config/database.yml<br />
 
-Things you may want to cover:
 
-* Ruby version
+To run the application on localhost3000 go into the application folder and run:<br />
+bundle install<br />
+rails db:create<br />
+rails db:migrate<br />
+rails db:seed <br />
+rails s
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
