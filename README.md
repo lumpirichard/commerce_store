@@ -9,10 +9,10 @@ insert your MySql username and password in the following file:<br />
 config/database.yml<br />
 
           
-To run the application on localhost3000 run:<br />
+To run the application on localhost3000 go into the application folder and run:<br />
 bundle install<br />
 rails db:create<br />
 rails db:migrate<br />
-rails db:seed
+rails db:seed <br />
 rails s
 
