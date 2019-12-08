@@ -5,14 +5,14 @@ Environment:
 * MySql version: 8.0.18 
 
 Configuration:<br />
-insert your MySql username and password in the following file<br />
+insert your MySql username and password in the following: file<br />
 config/database.yml<br />
 
-Database:<br />
-when connected to a MySql database run:<br />
+          
+To run the application on localhost3000 run:<br />
+bundle install<br />
 rails db:create<br />
 rails db:migrate<br />
 rails db:seed
-
-To run the application on localhost3000 run:<br />
 rails s
+
