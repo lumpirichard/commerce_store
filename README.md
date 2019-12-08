@@ -5,7 +5,7 @@ Environment:
 * MySql version: 8.0.18 
 
 Configuration:<br />
-insert your MySql username and password in the following: file<br />
+insert your MySql username and password in the following file:<br />
 config/database.yml<br />
 
           
