@@ -3,12 +3,13 @@ class ProductsController < ApplicationController
   @@cart = []
 
   def catalogue
-    if params[:calorie_count].nil?
+    if params[:name_search].nil? || params[:name_search].empty?
       @catalogue = Product.all
     else
-      @catalogue = Product.select do |product|
-        product.energy_kcal_100g <= params[:calorie_count].to_f
-      end
+      # @catalogue = Product.select do |product|
+      #   product.energy_kcal_100g <= params[:calorie_count].to_f
+      # end
+      @catalogue = Product.where("name LIKE ?", "%#{params[:name_search]}%")
     end
   end
 
