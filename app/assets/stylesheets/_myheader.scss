@@ -4,4 +4,19 @@
   height: 50px;
   width: 100%;
   position: fixed;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.myheader-link {
+  padding: 5px;
+  text-align: center;
+}
+
+.myheader-link a {
+  text-decoration: none;
 }

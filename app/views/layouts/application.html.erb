@@ -15,9 +15,15 @@
 
   <body>
     <div class="myheader">
-      <%= link_to "Home", root_path %> <%= link_to "Cart", cart_path %>
+      <div class="myheader-link">
+      <%= link_to "Home", root_path %>
+      </div>
+      <div class="myheader-link">
+       <%= link_to "Cart", cart_path %>
+      </div>
     </div>
-    <div class="mycontent">
+
+    <div class="content">
        <%= yield %>
     </div>
 
