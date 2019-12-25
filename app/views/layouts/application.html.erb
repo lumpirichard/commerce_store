@@ -9,8 +9,18 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <header><%= link_to "Home", root_path %> <%= link_to "Cart", cart_path %></header>
+  <!-- <header><%= link_to "Home", root_path %> <%= link_to "Cart", cart_path %></header> -->
+
+
+
   <body>
-    <%= yield %>
+    <div class="myheader">
+      <%= link_to "Home", root_path %> <%= link_to "Cart", cart_path %>
+    </div>
+    <div class="mycontent">
+       <%= yield %>
+    </div>
+
+
   </body>
 </html>
