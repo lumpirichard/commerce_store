@@ -1,15 +1,14 @@
-<h1>Our whole catalogue</h1>
+<h1>Our Catalogue</h1>
 
-  <form action="/catalogue" method = "get">
-    <input type="text" name="name_search" placeholder="Search">
-    <input type="submit">
-  </form>
+  <div class="search-form">
+    <form action="/catalogue" method = "get">
+      <input type="text" name="name_search" placeholder="Search">
+      <input type="submit">
+    </form>
+  </div>
 
   <div class="card-container">
     <% @catalogue.each do |product| %>
-    <!-- <li>
-      <%= link_to product.name, product_path(id: product.id)%>
-    </li> -->
       <div class="card-catalogue">
         <div class="card-catalogue-title">
           <%= link_to product.name, product_path(id: product.id)%>
