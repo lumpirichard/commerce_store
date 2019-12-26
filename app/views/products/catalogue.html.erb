@@ -7,8 +7,13 @@
 
 <ul>
   <% @catalogue.each do |product| %>
-  <li>
+  <!-- <li>
     <%= link_to product.name, product_path(id: product.id)%>
-  </li>
+  </li> -->
+  <div class="card-catalogue">
+    <div class="card-catalogue-title">
+      <%= link_to product.name, product_path(id: product.id)%>
+    </div>
+  </div>
 <% end %>
 </ul>
