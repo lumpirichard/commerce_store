@@ -11,7 +11,12 @@
     <% @catalogue.each do |product| %>
       <div class="card-catalogue">
         <div class="card-catalogue-title">
-          <%= link_to product.name, product_path(id: product.id)%>
+          <!-- <%= link_to product.name, product_path(id: product.id)%> -->
+          <%= link_to product_path(id: product.id) do %>
+            <div class="card-catalogue-title-link">
+                <%= product.name %>
+            </div>
+          <% end %>
         </div>
       </div>
     <% end %>

@@ -14,11 +14,100 @@
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 5px;
+  display: table;
+  border-radius: 3px;
 }
-
 
 .card-catalogue-title {
+  display: table-cell;
+  vertical-align: middle;
 
 }
+
+.card-catalogue-title-link {
+  height: 100px;
+  width: 300px;
+  vertical-align: middle;
+  display: table-cell;
+  transition: 0.2s;
+}
+
+.card-catalogue-title-link:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  }
+
+.card-catalogue-title a {
+  text-decoration: none;
+  font-family: benton-sans,sans-serif;
+  color: rgb(72, 72, 72);
+}
+
+.card-catalogue-title a:visited {
+  color: rgb(72, 72, 72);
+}
+
+.card-catalogue-title a:hover {
+  color: rgb(72, 72, 72);
+  weight: bold;
+}
+
+.card-product-container {
+  margin: 0px 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-product {
+  width: 700px;
+  height: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  border-radius: 3px;
+}
+
+.card-product-add {
+  width: 700px;
+  height: 50px;
+  line-height: 50px;
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  background: grey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 3px 3px;
+}
+
+.card-product-add a {
+  text-decoration: none;
+  font-family: benton-sans,sans-serif;
+  color: #000000;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+  transition: 0.2s;
+}
+
+.card-product a:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

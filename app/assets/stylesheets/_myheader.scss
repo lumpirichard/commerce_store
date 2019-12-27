@@ -1,5 +1,5 @@
 .myheader{
-  background: grey;
+  background: #000000;
   color: white;
   height: 50px;
   width: 100%;
@@ -13,10 +13,15 @@
 }
 
 .myheader-link {
+  height: 40px;
   padding: 5px;
+  margin: 0px 30px;
   text-align: center;
+  line-height: 40px;
 }
 
 .myheader-link a {
   text-decoration: none;
+  color: #FEFEFE;
+  font-family: benton-sans,sans-serif;
 }

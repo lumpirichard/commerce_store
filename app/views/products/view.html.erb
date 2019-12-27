@@ -1,10 +1,18 @@
-<h1><%= @product.name %></h1>
 
-<ul>
-  <li>category: <%=@product.categories%></li>
-  <li>kcal per 100g: <%= @product.energy_kcal_100g %></li>
-  <li>url: <%= @product.url %></li>
-</ul>
 
-<p><%= link_to "Add to cart", add_path(id: @product.id)%></p>
+
+<div class="card-product-container">
+  <div class="card-product">
+    <h1><%= @product.name %></h1>
+    <ul>
+      <li>category: <%=@product.categories%></li>
+      <li>kcal per 100g: <%= @product.energy_kcal_100g %></li>
+      <li>url: <%= @product.url %></li>
+    </ul>
+    <div class="card-product-add">
+      <p><%= link_to "Add to cart", add_path(id: @product.id)%></p>
+    </div>
+  </div>
+</div>
+
 
