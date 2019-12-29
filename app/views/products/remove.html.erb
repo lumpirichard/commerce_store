@@ -2,10 +2,14 @@
 
 
 <h2>Your cart</h2>
-<ul>
+<!-- <ul>
   <% @cart.each do |product| %>
   <li>
     <%= product.name%> <%= link_to "Remove", remove_path(id: product.id) %>
   </li>
 <% end %>
-</ul>
+</ul> -->
+
+
+
+<%= render "cartlist", locals: {cart: @cart} %>
