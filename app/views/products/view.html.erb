@@ -1,6 +1,3 @@
-
-
-
 <div class="card-product-container">
   <div class="card-product">
     <h1><%= @product.name %></h1>
@@ -10,7 +7,7 @@
       <li>url: <%= @product.url %></li>
     </ul>
     <div class="card-product-add">
-      <p><%= link_to "Add to cart", add_path(id: @product.id)%></p>
+      <p><%= link_to "Add to Cart", add_path(id: @product.id)%></p>
     </div>
   </div>
 </div>

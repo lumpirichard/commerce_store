@@ -1,15 +1,3 @@
-<h1>Successfully remove <%= @product.name %></h1>
-
-
-<h2>Your cart</h2>
-<!-- <ul>
-  <% @cart.each do |product| %>
-  <li>
-    <%= product.name%> <%= link_to "Remove", remove_path(id: product.id) %>
-  </li>
-<% end %>
-</ul> -->
-
-
+<h1>Successfully removed <%= @product.name %></h1>
 
 <%= render "cartlist", locals: {cart: @cart} %>

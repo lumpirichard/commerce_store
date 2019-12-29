@@ -1,0 +1,31 @@
+.cart-list-container {
+  margin: 0px 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cart-list {
+  width: 700px;
+  min-height: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  border-radius: 3px;
+  font-family: benton-sans,sans-serif;
+  color: rgb(72, 72, 72);
+}
+
+.cart-list h2 {
+  text-align: center;
+}
+
+.cart-list a {
+  text-decoration: none;
+}
+
+.cart-list a:hover {
+  font-weight: bold;
+}
+
+.cart-list a:visited {
+  color: rgb(72, 72, 72);
+}

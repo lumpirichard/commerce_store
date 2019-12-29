@@ -1,8 +1,13 @@
- <ul>
-    <% @cart.each do |product| %>
-      <li>
-        <%= product.name%> <%= link_to "Remove", remove_path(id: product.id) %>
-      </li>
-    <% end %>
-  </ul>
+<div class="cart-list-container">
+  <div class="cart-list">
+    <h2>Your cart items</h2>
+    <ul>
+      <% @cart.each do |product| %>
+        <li>
+          <%= product.name%> <%= link_to "(Remove)", remove_path(id: product.id) %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
 
