@@ -2,9 +2,9 @@
   <div class="card-product">
     <h1><%= @product.name %></h1>
     <ul>
-      <li>category: <%=@product.categories%></li>
-      <li>kcal per 100g: <%= @product.energy_kcal_100g %></li>
-      <li>url: <%= @product.url %></li>
+      <li><strong>Category:</strong> <%=@product.categories%></li>
+      <li><strong>KCAL per 100g:</strong> <%= @product.energy_kcal_100g %></li>
+      <li><strong>URL:</strong> <%= @product.url %></li>
     </ul>
     <div class="card-product-add">
       <p><%= link_to "Add to Cart", add_path(id: @product.id)%></p>
