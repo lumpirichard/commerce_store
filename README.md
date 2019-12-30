@@ -10,9 +10,11 @@ config/database.yml<br />
 
 
 To run the application on localhost3000 go into the application folder and run:<br />
-bundle install<br />
-rails db:create<br />
-rails db:migrate<br />
-rails db:seed <br />
-rails s
+```
+$ bundle install
+$ rails db:create
+$ rails db:migrate
+$ rails db:seed
+$ rails s
+```
 
