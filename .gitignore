@@ -31,4 +31,4 @@ yarn-debug.log*
 .yarn-integrity
 
 # Ignore database config file
-config/database.yml
+/config/database.yml
